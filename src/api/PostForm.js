@@ -35,14 +35,14 @@ export class PostForm extends Component {
         
         <div>
             <form onSubmit={this.handleSubmit}>
-                <div>
+                <div style={{marginTop: "50px"}}>
                     <label>User Id :</label>
                     <input 
                         type="text"
                         name="userId"
                         value={userId}
                         onChange = {this.handleChange}
-                        ></input>
+                        />
                 </div>
                 <div>
                     <label>Title : </label>
@@ -51,7 +51,7 @@ export class PostForm extends Component {
                         name="title"
                         value={title}
                         onChange = {this.handleChange}
-                        ></input>
+                        />
                 </div>
                 <div>
                     <label>Body :</label>
@@ -60,7 +60,7 @@ export class PostForm extends Component {
                         name="body"
                         value={body}
                         onChange = {this.handleChange}
-                        ></input>
+                        />
                 </div>
                 <div>
                     <button type='submit'>Submit</button>
